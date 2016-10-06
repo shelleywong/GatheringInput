@@ -5,8 +5,12 @@
     <title>Gathering Input</title>
     <script>
       function getName(){
+        var firstName;
+        var lastName;
         var fullName;
-        fullName = document.getElementById("first").value;
+        firstName = document.getElementById("first").value;
+        lastName = document.getElementById("last").value;
+        fullName = firstName + " " + lastName;
         document.getElementById("message").innerHTML = fullName;
       }
     </script>
